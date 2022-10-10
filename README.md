@@ -1,1 +1,1 @@
-Where am I?
+script that prints “Hello, World”
