@@ -1,4 +1,4 @@
-#Create a file in tmp folder with puppet
+# Create a file in tmp folder with puppet
 
 file { '/tmp/school':
         content => 'I love Puppet'
