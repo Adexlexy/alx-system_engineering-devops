@@ -2,5 +2,4 @@
 # Changes port in Nginx
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 sudo service nginx restart
-pkill -9 "$(cat /var/run/nginx.pid)"
-
+pkill "$(cat /var/run/nginx.pid)"
