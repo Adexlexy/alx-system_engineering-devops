@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Configures the firewall on a server
+
+# check if ufw has been installed and active
+sudo ufw status
+
+# set default rules
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# set ufw to allow traffic from ssh, http and https
+sudo ufw allow 22/tcp
+sudo ufw allow http/tcp
+sudo ufw allow 443/tcp
+
+# firewall enabled and the status checked
+sudo ufw enable
+sudo ufw status
+
